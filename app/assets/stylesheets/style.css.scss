@@ -7,7 +7,7 @@
 }
 
 header {
-     background: #206a8c url("img/bg.jpg") no-repeat;
+     background: #206a8c asset-url("bg.jpg") no-repeat;
      background-size: cover;
      background-position: 50% 50%;
      text-align: center;

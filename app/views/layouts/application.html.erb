@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Wagonpool</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Wagon Pool</title>
+        <meta name="description" content="Carpooling Calculator">
+
+        
+        <!-- Mobile Screen Resizing -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- stylesheet -->
+
+  		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+  		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  		<%= csrf_meta_tags %>
+
+        <!-- HTML5 Shim for IE 6-8 -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+   
+	    <!-- Favicon -->
+        <link rel="shortcut icon" type="image/ico" href="">
+
+        <!-- Apple Touch Icons -->
+        <link rel="apple-touch-icon" href="">
+        <link rel="apple-touch-icon" sizes="72x72" href="">
+        <link rel="apple-touch-icon" sizes="114x114" href="">
+        <link rel="apple-touch-icon" sizes="144x144" href="">
+
+    </head>
 <body>
 
-<%= yield %>
-
+    <%= render 'layouts/header' %>
+    <%= yield %>
+    <% #COULD ADD FOOTER HERE %>
+    
 </body>
 </html>
